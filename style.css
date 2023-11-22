@@ -1,3 +1,4 @@
+/* Body css for changing the font and background color */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f8f8;
@@ -6,7 +7,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    flex-direction: column; /* Set flex-direction to column to display items vertically */
+    flex-direction: column; 
 }
 
 #header1 {
@@ -14,16 +15,18 @@ body {
     color: #333;
 }
 
+/* Make input elements block-level */
 input[data-input], input[data-display] {
-    display: block; /* Make input elements block-level */
+    display: block; 
     padding: 10px;
     margin: 10px;
     width: 200px;
     font-size: 16px;
 }
 
+/* Make button block-level */
 button[data-calc] {
-    display: block; /* Make button block-level */
+    display: block; 
     padding: 10px 20px;
     font-size: 16px;
     background-color: #3498db;
@@ -45,7 +48,7 @@ span[data-display] {
     color: #333;
 }
 
-/* Responsive Styles */
+/* This is the code to make the screen responsive */
 @media screen and (min-width: 600px) {
     input[data-input] {
         width: 50%;
