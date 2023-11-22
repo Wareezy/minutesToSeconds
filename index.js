@@ -10,8 +10,11 @@ function convert(){
     //backticks are used to access the variables and to display the data more neatly
     let answer=eval(`${input} * ${secondsToMinute}`)
     answer=answer.toFixed(2);
-    display.innerHTML=answer
+    display.value=answer
 }
 //calling a click function. so that when the button is clicked that it accesses the convert function
 btnMulti.addEventListener('click',convert)
 
+
+//makes that so that the input is only readable
+document.querySelector("[data-display]").readOnly = true;
